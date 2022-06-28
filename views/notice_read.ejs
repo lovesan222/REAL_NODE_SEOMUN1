@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/notice_read.css">
+</head>
+<body>
+    <header>
+        <section class="header_main">
+            <div class="title_wrap_2">
+                <h1><img src="../imges/logo.jpg"></h1>
+                <div class="h_title">
+                    <ul class="header_nav">
+                        <li><a href="">야시장소개</a></li>
+                        <li><a href="">먹거리 살거리</a></li>
+                        <li><a href="">서문거리예술문화</a></li>
+                        <li><a href="">참여마당</a></li>
+                        <li><a href="">입정신청</a></li>
+                    </ul>
+                    <div class="login">
+                        <a href="">로그인</a>
+                        <a href="">회원가입</a>
+                    </div>
+                    <div class="pc_none">
+                        <a href="">
+                            <img src="imges/icons8-menu-48.png">
+                        </a>
+                        <a href="">
+                            <img src="imges/icons8-buying-48.png">
+                        </a>
+                        <a href="">
+                            <img src="imges/icons8-search-48.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <main> 
+        <section>
+            <div class="title_wrap">
+                <div class="title">
+                    <h1 class="notice">공지사항</h1>
+                </div>
+            </div>
+        </section>
+        <section class="w1400 sec1">
+            <nav class="notice_wrap">
+                <ul class="notice_list">
+                    <li><a href="">서문시장 뉴스</a></li>
+                    <li><a href="">자주하는 질문</a></li>
+                    <li><a href="">품평회 명단</a></li>
+                </ul>
+                <% if(typeof errs !== 'undefined'){ %>
+                    <% errs.forEach(() =>{ %>
+                        <h3><%= err.param %> : <%= err.msg %></h3>
+                    <% }) %>
+                <%}%>
+                <form>
+                    <input type="hidden" name="id" value="<%=row.id%>">
+                    <div class="notice_date">
+                        <h2><%=row.title%></h2>
+                        <!-- <p><%= row.content%></p> -->
+                        <span><%=row.updated%></span> 
+                    </div>
+                    <ul class="w1400 file_list">
+                        <li>
+                            <a href="">야시장 품평회 참가자 설명자료</a>
+                            <input type="button" value="파일" id="notice_file">
+                        </li>
+                        <li>
+                            <a href="">품평회 참여 명단 게시용</a>
+                            <input type="button" value="파일" id="notice_file">
+                        </li><br>
+                        <div class="txt_wrap">
+                            <%=row.content%>
+                        </div>
+            </nav>
+            <div class="list">
+                <a>
+                    <button>다음글</button>
+                    <input type="button" value="목록" onclick = "location.href = '/' ">
+                </a>
+            </div>    
+        </section>
+    </main>
+    <footer>
+        <section>
+          <article>
+              <div class="footer_banner">
+                  <div>
+                      <img src="../imges/footer_banner01 (1).jpg">
+                  </div>
+                  <div>
+                      <img src="../imges/footer_banner02.jpg">
+                  </div>
+                  <div>
+                      <img src="../imges/footer_banner03 (1).jpg">
+                  </div>
+                  <div>
+                      <img src="../imges/footer_banner04 (1).jpg">
+                  </div>
+                  <div>
+                      <img src="../imges/footer_banner05 (1).jpg">
+                  </div>
+              </div>
+              <nav class="corp_area">
+                  <ul class="corp_item">
+                      <li><a href="#"> FAQ |</a></li>
+                      <li><a href="#">시장 소개 |</a></li>
+                      <li><a href="#">입점문의</a></li>
+                  </ul>
+                  <ul class="corp_item">
+                      <li>야시장 전화 |</li>
+                      <li>053-256-6341</li>
+                  </ul>
+                  <ul class="corp_adderess">
+                      <p>대구 남구 대명로 215 대구광역시상인회관4층, 재단법인 대구전통시장진흥재단ㆍ상권육성팀</p>
+                      <p>Seomun Night Market Ⓒ2016 Daegu traditional Market Support Agency. All Rights Reserved</p>
+              </nav>
+          </article>
+      </section>
+      </footer>
+</body>
+</html>

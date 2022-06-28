@@ -1,0 +1,134 @@
+
+.wsec1400{
+    width: 1400px;
+    margin: auto;
+    border: 1px solid #e3e7ee;
+}
+.seller_wrap{
+    max-width: 960px;
+    margin: 0 auto;
+    min-width: 320px;
+}
+.seller{
+    margin: 50px 10px;
+    display: block;
+
+}
+.seller>.icon{
+    display: table;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #e3e7ee;
+}
+.seller>.icon>li{
+    display: table-cell;
+    line-height: 60px;
+    background-color: #fff;
+    text-align: center;
+    border-right: 1px solid #e3e7ee;
+}
+.gray>.icon_fi{
+    border-right: none;
+    background-color: #9199ac;
+    color: #e3e7ee;
+}
+.seller_wrap2{
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.sell{
+    display: flex;
+}
+.sell>span{
+    display: inline-block;
+    background: url(../Img/images/sp_icon_join.png) no-repeat 0 0;
+	width: 60px;
+	height: 60px;
+}
+.sell>p{
+    padding: 20px;
+    box-sizing: border-box;
+}
+.wsec1400{
+    width: 960px;
+    
+}
+.img_art{
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: auto;
+}
+.img_art>.img_wrap{
+    width: 33.333%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.img_wrap>.icons{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 200px;
+    background-color: lightgray;
+    position: relative;
+}
+.img_wrap>.icons>a>span{
+    position: absolute;
+    top: 35%; left: 50%;
+    transform: translate(-50%);
+}
+.img_wrap>.icons>p>a{
+    position: absolute;
+    top: 65%; left: 50%;
+    transform: translate(-50%);
+    color: white;
+}
+.first{
+    display: inline-block;
+    background: url('../Img/images/sp_icon_join.png') no-repeat -350px -80px;
+	width: 60px;
+	height: 60px;
+}
+.second{
+    display: inline-block;
+    background: url('../Img/images/sp_icon_join.png') no-repeat -560px 0;
+	width: 60px;
+	height: 60px;
+}
+.img_wrap>.icons>a>.third{
+    display: inline-block;
+	background: url('../Img/images/sp_icon_join.png') no-repeat 0 -80px;
+	width: 60px;
+	height: 60px;
+    background-color: black;
+}
+
+.text{
+    width: 920px;
+    align-items: center;
+    margin: auto;
+}
+.text_wrap{
+    box-sizing: border-box;
+ 
+}
+.text_wrap>li{
+    font: 16px;
+    background-color: lightgray;
+    color: black;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.next{
+   text-align: center;
+   margin: 50px;
+}
+.next>div>a{
+    display: inline-block;
+    background-color: #00c73c;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+}

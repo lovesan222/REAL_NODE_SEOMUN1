@@ -1,0 +1,499 @@
+
+/*******main******/
+
+/*section{
+    margin: 10px;
+}  이건 넣을지 말지 컨펌 받기*/
+
+.article{
+    margin: 20px;
+}
+.title_wrap{
+    width: 100%;
+    background-color: #192649;
+    box-sizing: border-box;
+    /*반응형으로 바꿔야하기 때문에 
+    위에는 무조건 div로 감싸서 100%로를 주고 
+    헤더에 원하는 사이즈를 잡는다고 생각하면 됨
+    걍 이렇게 하기 
+    1. div를 100%로 잡는다 
+    2. h1에 고정되길 원하는 width 값을 준다 */
+    /*로고를 끝이 아니라 
+    보통 약간 떨어뜨리는데 패딩이나 마진을 주면 
+    반응형으로 바꿨을 때 밀리니까 예쁘지 않음
+    그러니까 이 방법을 주는 것 */
+}
+.title{
+
+    display: flex;
+    text-align: center;
+    background-color: #192649;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.title>h1{
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+.main_img{
+    display: block;
+    width: 100%;
+    height: 940px;
+    background-image: url(/img/images/main_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+}
+.main_txt{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+.main_txt>h3{
+    font-size: 92px;
+    text-shadow: 2px 2px black;
+}
+.main_txt>p{
+    font-size: 32px;
+    text-shadow: 2px 2px black;
+}
+.sec_img{
+    width: 100%;
+    height: 940px;
+    display: block;
+    background-image: url(/img/images/sub_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+}
+.sec_txt{
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    height: 100px;
+    text-align: center;
+}
+.sec_txt>h3{
+    font-size: 52px;
+    text-shadow: 2px 2px black;
+}
+.sec_txt>p{
+    font-size: 20px;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    border-top: 1px solid white;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    text-shadow: 1px 1px black;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.title>h1{
+    color: white;
+}
+.moon_wrap{
+    width: 100%;
+}
+.moon_img{
+    display: block;
+    width: 100%;
+    background-color:#192649;
+    margin: auto;
+    background-image: url(../img/images/cherry-865.png);
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    background-position: center top;
+    padding: 500px 0 50px 0;
+    text-align: center;
+}
+.moon_txt{
+    display: inline-block;
+}
+.moon_txt2{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 40px;
+}
+.moon_txt2>h4{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: wheat;
+}
+.number{
+    text-align: left;
+    margin-bottom: 40px;
+}
+.number>h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFBF0B;
+}
+.number>p{
+    color: #ffbf0b;
+    font-size: 22px;
+    font-weight: bold;
+}
+.number_bus{
+    text-align: left;
+    margin-bottom: 40px;
+}
+.number_bus>h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFBF0B;
+}
+.number_bus>p{
+    color: #ffbf0b;
+    font-size: 22px;
+    font-weight: bold;
+}
+.number_inf{
+    text-align: left;
+}
+.number_inf>h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFBF0B;
+}
+.number_inf>p{
+    color: #ffbf0b;
+    font-size: 22px;
+    font-weight: bold;
+}
+.way_wrap{
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    margin: auto;
+}
+.way_img{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+.txt_inf{
+    margin-top: 10%;
+    text-align:center;
+    color: #192649;
+    font-weight: bold;
+    width: 50%;
+}
+.marekt_txt{
+    font-size: 32px;
+}
+.txt{
+    display: inline-block;
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;    
+    margin-top: 70px;
+}
+.banner_wrap{
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.banner_wrap>div{
+    width: 20%;
+    box-shadow: 5px 5px #cfcbcc;
+}
+.banner_wrap>div>img{   
+    width: 100%;
+}
+.footer_banner{
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto    ;
+}
+.footer_banner>div>img{
+    width: 100%;
+}
+.corp_area{
+    width: 100%;
+    height: 171px;
+    background-color: #192649;
+    font-weight: bold;
+    margin: 50px auto;
+    font-size: 16px;
+}
+.corp_item{
+    padding-top: 20px;
+    display: flex;
+    justify-content:start;
+    color: white;
+
+}
+.corp_item>li>a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    text-align: center;
+}
+
+.corp_adderess{
+    color: white;
+
+}
+
+
+
+
+/**************~~~~~~~아래부턴 미디어 쿼리~~~~~~**************/
+
+
+
+@media only screen and (max-width: 1400px) {
+
+  
+    .title{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .main_txt>h3{
+        font-size: 62px;
+    }
+    .main_txt>p{
+        font-size: 28px;
+    }
+    .sec_txt>h3{
+        font-size: 40px;
+    }
+    .sec_txt>p{
+        font-size: 16px;
+        width: 60%;
+    }
+    .way_wrap{
+        flex-direction: column;
+    }
+    .moon_txt2>h4{
+        text-align: center;
+        font-size: 28px;
+    }
+    .number>h3{
+        font-size: 24px;
+    }
+    .number>p{
+        color: #ffbf0b;
+        font-size: 20px;
+    }
+    .number_bus>h3{
+        font-size: 24px;
+    }
+    .number_bus>p{
+        font-size: 20px;
+    }
+    .number_inf>h3{
+        font-size: 24px;
+    }
+    .number_inf>p{
+        font-size: 20px;
+    }
+    .way_img{
+        margin: auto;
+    }
+    .way_img>img{
+        width: 60%;
+        height: 60%;
+        padding: 50px 0;
+        box-sizing: border-box;
+    }
+    .txt_inf{
+        margin-top: none;
+        margin: auto;
+        margin-bottom: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .marekt_txt{
+        font-size: 20px;
+    }
+    .txt{
+        font-size: 20px;
+        margin-top: 20px;    
+    }  
+    .banner_wrap{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    .banner_wrap>div{
+        margin-bottom: 30px;
+    }
+    .footer_banner{
+        width: 100%;
+    }
+    .footer_banner>div>img{
+        width: 80%;
+    }
+    .corp_area{
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .corp_area>.corp_item>li{
+        padding-bottom: 5px;
+    }
+    .corp_area>.corp_item>li{
+        font-size: 14px;
+    }
+    .corp_area>.corp_adderess{
+        padding-bottom: 14px;
+    }
+    .corp_area>.corp_adderess>p{
+        font-size: 14px;
+    }
+    
+     /**max-width: 1200px**/   
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**************~~~~~~~아래부턴 모바일 미디어 쿼리~~~~~~**************/
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 677px) {
+    .title{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .main_txt>h3{
+        font-size: 52px;
+    }
+    .main_txt>p{
+        font-size: 24px;
+    }
+    .sec_txt>h3{
+        font-size: 32px;
+    }
+    .sec_txt>p{
+        font-size: 16px; 
+        width: 80%;
+    }
+    .way_wrap{
+        flex-direction: column;
+    }
+    .moon_txt2>h4{
+        text-align: center;
+        font-size: 24px;
+        box-sizing: border-box;
+    }
+    .number>h3{
+        font-size: 20px;
+    }
+    .number>p{
+        color: #ffbf0b;
+        font-size: 16px;
+        flex-wrap: nowrap;
+    }
+    .number_bus>h3{
+        font-size: 20px;
+    }
+    .number_bus>p{
+        font-size: 16px;
+        flex-wrap: nowrap;
+    }
+    .number_inf>h3{
+        font-size: 20px;
+    }
+    .number_inf>p{
+        font-size: 16px;
+        flex-wrap: nowrap;
+    }
+    .way_img{
+        margin: auto;
+    }
+    .way_img>img{
+        width: 80%;
+        height: 80%;
+        padding: 50px;
+    }
+    .txt_inf{
+        margin-top: none;
+        margin: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .marekt_txt{
+        font-size: 20px;
+    }
+    .txt{
+        font-size: 16px;
+
+    }
+    .banner_wrap{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin-bottom: 50px;
+    }
+    .banner_wrap>div{
+        width: 40%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+}
+    .footer_banner{
+        width: 100%;
+    }
+    .footer_banner>div>img{
+        width: 70%;
+     
+    }
+    .corp_area{
+        flex-wrap: nowrap;
+        width: 100%;
+        font-size: 12px;
+    }
+    .corp_area>.corp_item>li{
+        padding-bottom: 5px;
+    }
+    .corp_area>.corp_item>li{
+        font-size: 14px;
+    }
+    .corp_area>.corp_adderess{
+        padding-bottom: 15px;
+    }
+    .corp_area>.corp_adderess>p{
+        font-size: 14px;
+    }
+    
+    
+
+
+
+
+ /**max-width: 677px**/    
+}
+

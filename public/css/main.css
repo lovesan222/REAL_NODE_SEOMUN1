@@ -1,0 +1,749 @@
+
+
+
+
+/***************main start*********************/
+
+.section_wrap{
+        width: 100%;
+        margin: auto;
+        background-color: #FFBF0B;
+    }
+    article.title{
+        width: 1400px;
+        display: flex;
+        margin: auto;
+        text-align: center;
+    }
+    .title_wrap>h1{
+        font-size: 48px;
+        font-weight: bold;
+        color: white;
+        text-align: left;
+        margin-bottom: 50px;
+        text-decoration: underline;
+        letter-spacing: 5px; opacity: 0;
+        animation: title_head 1s 1s forwards;
+    }
+    @keyframes title_head{
+        100%{ letter-spacing: 0px; opacity: 100;}
+    }
+    .title_wrap>h1:active{
+        content: '';
+        display: block;
+        animation: line 0.8s 0.8s forwards; 
+    }
+    .title_wrap>p{
+        font-size: 24px;
+        font-weight: bold;
+        color: black;
+        text-align: left;
+        animation: small_txt 1s 1s forwards;
+        transform: translate(70%);
+    }
+    @keyframes small_txt{
+        100%{transform: translateY(0%); opacity: 1;} 
+    }
+    .banner{
+        text-align: right;
+    }
+    .banner>img{
+        width: 80%;
+        height: 100%;
+    } 
+    .img_wrap{
+        display: flex;
+        justify-content: space-around;
+        width: 1400px;
+        margin: auto;
+    }
+    .img_wrap>figure{
+        width: calc(25% - 10px);
+        margin-left: 10px;
+        padding-top: 50px;
+    }
+    .img_wrap>figure:first-child{
+        margin-left: 0;
+    }
+    .img_wrap>figure>a>div{
+        width: 100%;
+        padding-top: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .market_img_1:hover,
+    .market_img_2:hover,
+    .market_img_3:hover,
+    .market_img_4:hover,
+    .market_img_5:hover{
+        transform: translate(-10%, -10%);
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    }
+    .market_img_1{
+        background-image: url(../img/images/marekt.jpg); 
+        transition: 0.5s;
+    }
+    .market_img_2{
+        background-image: url(../img/images/bg_sec01_02.png);
+        transition: 0.5s;
+    }
+    .market_img_3{
+        background-image: url(../img/images/bg_sec01_03.png);
+        transition: 0.5s;
+    }
+    .market_img_4{
+        background-image: url(../img/images/bg_sec01_01.png);
+        transition: 0.5s;
+    }
+    .market_img_5{
+        background-image: url(../img/images/bg_sec01_04.png);
+        transition: 0.5s;
+    }
+    .img_wrap figcaption{
+        font-size: 24px;
+        font-weight: 400;
+        background-color: #FFBF0B;
+        margin-bottom: 50px;
+        color: #192649;
+        text-align: center;
+        color: white;
+        transition: 0.5s;
+    } 
+    .title_wrap{
+        width: 100%;
+        background-color: #FFBF0B;
+        margin: auto;
+    }
+    .title{
+        width: 1400px;
+        margin: auto;
+      }
+    .title>h1{
+        height: 80px;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        color: white;
+        line-height: 80px;
+        align-items: left;
+        text-align:left;
+    }
+    .gallery_wrap{
+        display: flex;
+        justify-content: space-around;
+        width: 1400px;
+        margin: 50px auto;
+    }
+    .gallery_wrap>div{
+        width: calc(25% - 10px);
+    }
+    .gallery_wrap>div>a{
+        display: inline-block;
+        padding-top: 100%;
+    }
+    .gallery_wrap>div{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 50px;
+        margin-left: 10px;
+        margin-bottom: 50px;
+        
+    }
+    .gallery_wrap>div:first-child{
+        background-position: top;
+        margin-left: 0px;
+    }
+    .gallery_img_1{
+        background-image: url(../img/images/grand_open.png);
+    }
+    .gallery_img_2{
+        background-image: url(../img/images/people.jpg);
+    }
+    .gallery_img_3{
+        background-image: url(../img/images/street.jpg);
+    }
+    .gallery_img_4{
+        background-image: url(../img/images/street_food.jpg);
+    }
+    .gallery_img_5{
+        background-image: url(../img/images/food.jpg);
+    }
+.moon_wrap{
+    width: 100%;
+    padding-top: 50px;
+}
+.moon_img{
+    display: block;
+    width: 100%;
+    background-color:#192649;
+    margin: auto;
+    background-image: url(../img/images/cherry-865.png);
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    background-position: center top;
+    padding: 500px 0 50px 0;
+    text-align: center;
+}
+.moon_txt{
+    display: inline-block;
+}
+.moon_txt2{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 40px;
+}
+.moon_txt2>h4{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: wheat;
+}
+.number{
+    text-align: left;
+    margin-bottom: 40px;
+}
+.number>h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFBF0B;
+}
+.number>p{
+    color: #ffbf0b;
+    font-size: 22px;
+    font-weight: bold;
+}
+.number_bus{
+    text-align: left;
+    margin-bottom: 40px;
+}
+.number_bus>h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFBF0B;
+}
+.number_bus>p{
+    color: #ffbf0b;
+    font-size: 22px;
+    font-weight: bold;
+}
+.number_inf{
+    text-align: left;
+}
+.number_inf>h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFBF0B;
+}
+.number_inf>p{
+    color: #ffbf0b;
+    font-size: 22px;
+}
+.more_wrap{
+    width: 100%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.more{
+    width: 100%;
+    margin: 50px auto;
+    background-color: #ffbf0b;
+}
+.more>h1{
+    width: 1400px;
+    height: 80px;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    line-height: 80px;
+    align-items: left;
+    text-align:left;
+    margin: auto;
+}
+.photo_wrap{
+    width: 1400px; 
+    /* 이건 div 
+    위드 1400을 줘야 칸 안에서 만들어짐
+    width 100을 주면 엄청 커짐*/
+    margin: auto;
+}
+.photo{
+    width: calc(100% - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+.photo_wrap>.photo>li{
+    width: 45%;
+    padding-top: 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 10px 20px;
+    border: 1px solid #192649;
+    box-sizing: border-box;
+}
+.img_1{
+    background-image: url(../img/images/semun_banner.jpg);
+}
+.img_2{
+    background-image: url(../img/images/yellow.jpg);
+}
+.img_3{
+    background-image: url(../img/images/temple.jpg);
+}
+.photo_wrap>.photo>li.img_4{
+    background-image: url(../img/images/poster.jpg);
+    background-position: top;
+}
+.photo>li>a>span>p{
+    font-size: 24px;
+    color: aliceblue;
+    background-color: #192649;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.seomun_news{
+    width: 100%;
+
+}
+.title{
+    width: 100%;
+    background-color: #ffbf0b;
+}
+      /************News *********/
+
+
+
+.title>h1{
+    width: 1400px;
+    margin: auto;
+}
+.news_wrap{
+    width: 1400px;
+    margin: auto;
+    padding: 50px 0 0 50px;
+    box-sizing: border-box;
+
+}
+.news_wrap>ul{
+    width: calc(100% - 10px );
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+.news_wrap>ul>li{
+    width: 45%;
+    padding-top: 20%;
+    box-sizing: border-box;
+    margin: 10px 20px;
+    border: 1px solid #192649;
+}
+.news_wrap>ul>.news_img_1{
+    background-image: url(../img/images/pro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.news_wrap>ul>.news_img_2{
+    background-image: url(../img/images/seller.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.news_wrap>ul>.news_img_3{
+    background-image: url(../img/images/banner_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+.news_wrap>ul>.news_img_4{
+    background-image: url(../img/images/banner22.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.news_wrap>ul>li>a{
+    display: block;
+}
+/************* *footer Section*************************/
+
+
+.footer_banner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.footer_banner>div>img{
+    width: 100%;
+}
+.footer_banner>div{
+    margin-top: 50px;
+}
+.corp_area{
+    width: 100%;
+    height: 171px;
+    background-color: #192649;
+    font-weight: bold;
+    margin: 50px auto;
+    font-size: 16px;
+}
+.corp_item{
+    padding-top: 20px;
+    display: flex;
+    justify-content:start;
+    color: white;
+
+}
+.corp_item>li>a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    text-align: center;
+}
+
+.corp_adderess{
+    color: white;
+
+}
+
+
+/**************~~~~~~~아래부턴 미디어 쿼리~~~~~~**************/
+
+
+
+@media only screen and (max-width: 1400px) {
+   /**max-width: 1200px**/   
+
+   article.title{
+    width: 100%;
+    flex-direction: column;
+}   
+.title_wrap>h1{
+    font-size: 32px;
+    margin: 20px;
+}
+.title_wrap>p{
+    font-size: 16px;
+    margin-left: 20px;  
+}
+.banner>img{
+    width: 50%;
+    height: 50%;
+    flex-grow: row nowrap; 
+}
+.img_wrap{
+    width: 100%;
+}
+.img_wrap figcaption{
+    font-size: 16px;
+}
+.title_wrap{
+    width: 100%;
+    background-color: #FFBF0B;
+    margin: auto;
+}
+.title>h1{
+    width: 100%;
+    font-size: 20px;
+}
+.gallery_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.gallery_wrap>div{
+    width: calc(50% - 10px);
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery_wrap>div.gallery_img_5{
+   display: none;
+}
+.way_wrap{
+    flex-direction: column;
+}
+.moon_txt2>h4{
+    text-align: center;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+.number>h3{
+    font-size: 20px;
+}
+.number>p{
+    color: #ffbf0b;
+    font-size: 16px;
+    flex-wrap: nowrap;
+}
+.number_bus>h3{
+    font-size: 20px;
+}
+.number_bus>p{
+    font-size: 16px;
+    flex-wrap: nowrap;
+}
+.number_inf>h3{
+    font-size: 20px;
+}
+.number_inf>p{
+    font-size: 16px;
+    flex-wrap: nowrap;
+}
+.more>h1{
+    font-size: 20px;
+    width: 100%;
+}
+.photo_wrap{
+    width: 100%;
+}
+.photo{
+    width: 100%; 
+    /* 얘한테 따로 나눌 용도로
+    calc를 써야하지 않으면 그냥 100%로 넣어도 된다고 하심*/
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+.photo_wrap>.photo>li{
+    width: calc(50% - 40px); 
+    /*40px 뺀 이유는 웹용에 마진 값으로 margin: 10px 20px;
+    이렇게 넣어뒀기 때문에 빼준 것임!*/
+    padding-top: 23%;
+}
+.photo>li>a>span>p{
+    font-size: 16px;
+}
+
+.news_wrap{
+    width: 100%;
+
+}
+.news_wrap>ul{
+    width: 100%; 
+    margin: auto;
+}
+.news_wrap>ul>li{
+    width: calc(50% - 40px);
+}
+.footer_banner{
+    width: 100%;
+}
+.footer_banner>div>img{
+    width: 100%;
+}
+.footer_banner>div{
+    margin: 20px;
+}
+.corp_area{
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.corp_area>.corp_item>li{
+    padding-bottom: 5px;
+}
+.corp_area>.corp_item>li{
+    font-size: 14px;
+}
+.corp_area>.corp_adderess{
+    padding-bottom: 14px;
+}
+.corp_area>.corp_adderess>p{
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**************~~~~~~~아래부턴 모바일 미디어 쿼리~~~~~~**************/
+
+.mo_none{ /*모바일 버전으로 왔을 때 숨겨줘야 하는 애는 이걸 주겠다는 의미
+    클래스를 하나씩 더 주면 됨*/
+    display: none;
+}
+.w1200{
+    width: 100%; /*1200이하로 왔을 때 w1200을 쓴 클래스가 있는 애들은
+    한 번에 100%로 변화가 있을 것임*/
+} 
+  /*위에 두갠 참고용으로 쓰기*/
+
+
+
+@media only screen and (max-width: 677px) {
+
+
+
+    article.title{
+        width: 100%;
+        flex-direction: column;
+    }   
+    .title_wrap>h1{
+        font-size: 32px;
+        margin: 20px;
+    }
+    .title_wrap>p{
+        font-size: 16px;
+        margin-left: 20px;  
+    }
+    .banner>img{
+        width: 50%;
+        height: 50%;
+    }
+    .img_wrap{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .img_wrap>figure{
+        width: calc(50% - 10px);
+    }
+    .img_wrap>figure>a>div{
+        width: 100%;
+    }
+
+    .img_wrap>figure:first-child{
+        display: none;
+    }
+    .img_wrap figcaption{
+        font-size: 16px;
+        flex-grow: row nowrap; 
+    }
+    .title_wrap{
+        width: 100%;
+        background-color: #FFBF0B;
+        margin: auto;
+    }
+    .title>h1{
+        font-size: 20px;
+    }  
+    .gallery_wrap{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .gallery_wrap>div{
+        width: calc(50% - 10px);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gallery_wrap>div.gallery_img_5{
+       display: none;
+    }
+    .way_wrap{
+        flex-direction: column;
+    }
+    .moon_txt2>h4{
+        text-align: center;
+        font-size: 24px;
+        box-sizing: border-box;
+    }
+    .number>h3{
+        font-size: 20px;
+    }
+    .number>p{
+        color: #ffbf0b;
+        font-size: 16px;
+        flex-wrap: nowrap;
+    }
+    .number_bus>h3{
+        font-size: 20px;
+    }
+    .number_bus>p{
+        font-size: 16px;
+        flex-wrap: nowrap;
+    }
+    .number_inf>h3{
+        font-size: 20px;
+    }
+    .number_inf>p{
+        font-size: 16px;
+        flex-wrap: nowrap;
+    }
+    .more>h1{
+        font-size: 20px;
+    }
+    .photo_wrap{
+        width: 100%;
+    }
+    .photo{
+        width: 100%; 
+        /* 얘한테 따로 나눌 용도로
+        calc를 써야하지 않으면 그냥 100%로 넣어도 된다고 하심*/
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .photo_wrap>.photo>li{
+        width: calc(50% - 40px); 
+        /*40px 뺀 이유는 웹용에 마진 값으로 margin: 10px 20px;
+        이렇게 넣어뒀기 때문에 빼준 것임!*/
+        padding-top: 23%;
+    }
+    .photo>li>a>span>p{
+        font-size: 16px;
+    }
+    .news_wrap>ul{
+        width: 100%; 
+        margin: auto;
+    }
+    .news_wrap>ul>li{
+        width: calc(50% - 40px);
+    }
+    .footer_banner{
+        width: 100%;
+    }
+    .footer_banner>div>img{
+        width: 100%;
+    }
+    .footer_banner>div{
+        margin: 20px;
+    }
+    .corp_area{
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .corp_area>.corp_item>li{
+        padding-bottom: 5px;
+    }
+    .corp_area>.corp_item>li{
+        font-size: 14px;
+    }
+    .corp_area>.corp_adderess{
+        padding-bottom: 15px;
+    }
+    .corp_area>.corp_adderess>p{
+        font-size: 14px;
+    }
+    
+    
+    
+    
+    
+    
+       
+}
+
+
+
+
+ /**max-width: 677px**/    
+}
+
+
+

@@ -1,0 +1,311 @@
+
+/*********************main start************************/
+
+.title_wrap{
+    width: 100%;
+    margin: auto;
+    background-color: #192649;
+    margin-top: 50px;
+}
+.title{
+    width: 100%;    
+    background-color: #192649;
+    margin: 30px auto;
+}
+.title>h1{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+.main_notice{
+    width: 1400px;
+    display: flex;
+    margin: auto;
+    padding-top: 20px;
+    position: relative;
+}
+.menu{
+    display: none;
+}
+/* .menu_aside{ 
+    width: 20%;   
+    padding: 0 20px; 
+    box-sizing: border-box;
+} */
+.menu>li>a{
+    display: block;
+    background-color: white;
+    color: #192649;
+    font-size: 16px;
+    text-align: center;
+    font-size: bold;
+    border: 1px solid #192649;
+}
+.menu>li{
+    padding: 3px;
+}
+.menu>.menu_notice a{
+    font-size: 24px;
+    text-align: center;
+}
+.input_wrap{
+    align-items: center;
+    width: 100%;
+    height:40px;
+    background-color: #f6f6f6;
+    border: 1px solid #192649;
+    margin-top: 30px;
+    display: none;
+}
+form{
+    width: 100%;
+    height: 100px;
+    text-align: start;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.t_title{
+    table-layout:fixed;
+    width: 100%;
+    height: 575px;
+    border: 1px solid #727272;
+    background-color: #fff;
+    padding: 15px 50px 15px 40px; 
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+.t_title th:first-child{
+    width: 70px;
+    flex-wrap: nowrap;
+}
+.t_title td:nth-child(2){
+    width: calc(100% - 170px);
+    overflow: hidden;          
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+}
+.t_title th:last-child{
+    width: 100px;
+    flex-wrap: nowrap;
+}
+input{
+    width: calc(100% - 80px); /*고정값이 아니라서 calc를 써야함*/
+    height: 25px;
+    margin: auto;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 5px;
+}
+.notice2{
+    width: 100%;
+}
+.notice_select{
+    border: 1px solid #192649;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    background-color: #f6f6f6;
+    color: #222;
+}
+.notice_select>li{
+    line-height: 55px;
+}
+table, th, td {
+    border: 1px solid #727272;
+    background-color: #fff;
+    text-align: center;
+    font-size: 16px;
+    color: #222;
+    line-height: 55px;
+}
+th{
+    background-color: #f6f6f6;
+    font-weight: bold;
+}
+.innner_box{
+    background-color: #f6f6f6;
+}
+.innner_box div{
+    border: 1px solid #727272;
+    border-top: none;
+    display: flex;
+    justify-content: center;
+}
+.innner_box span>a{
+    display: block;
+    margin: 20px;
+    width: 25px;
+    height: 25px;
+    min-width: auto;
+    text-align: center;
+    border:1px solid #727272;
+    color:white;
+}
+div>.inner_box_color>a{
+    background-color: #141E3C;
+}
+div>.inner_box_number>a{
+    background-color:#333333;
+}
+.footer_banner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.footer_banner>div>img{
+    width: 100%;
+}
+.footer_banner>div{
+    margin: 50px;
+}
+.corp_area{
+    width: 100%;
+    height: 171px;
+    background-color: #192649;
+    font-weight: bold;
+    margin: 50px auto;
+    font-size: 16px;
+}
+.corp_item{
+    padding-top: 20px;
+    display: flex;
+    justify-content:start;
+    color: white;
+
+}
+.corp_item>li>a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    text-align: center;
+}
+
+.corp_adderess{
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+/**************~~~~~~~아래부턴 모바일 미디어 쿼리~~~~~~**************/
+
+
+@media only screen and (max-width: 1400px) {
+    
+    
+    .title{
+        width: 100%
+    }   
+    .menu_aside{ 
+        display: none;
+    }
+    .main_notice{
+        width: 100%;
+    }
+    .notice2{
+        margin: auto; /*박스 왼쪽에서 중간으로 보내줌!*/
+    }
+    .footer_banner{
+        width: 100%;
+    }
+    .footer_banner>div>img{
+        width: 100%;
+    }
+    .footer_banner>div{
+        margin: 20px;
+    }
+    .corp_area{
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .corp_area>.corp_item>li{
+        padding-bottom: 5px;
+    }
+    .corp_area>.corp_item>li{
+        font-size: 14px;
+    }
+    .corp_area>.corp_adderess{
+        padding-bottom: 15px;
+    }
+    .corp_area>.corp_adderess>p{
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .main_notice{
+        margin: auto;
+    }
+    .menu_aside{ 
+        display: none;
+    }
+    .notice_select{
+        white-space: nowrap; 
+        font-size: 14px;
+    }
+    .select{
+        white-space: nowrap;   
+    }
+    .input_wrap{
+        display: block;
+        white-space: nowrap; 
+    }
+    form{
+        white-space: nowrap; 
+    }  
+    .t_title>tr>td:nth-child(2){
+        width: calc(100%- 170px);
+        overflow: hidden;          
+        text-overflow: ellipsis; 
+        white-space: nowrap;
+    }
+    .innner_box{
+        display: none;
+    }
+    .footer_banner{
+        width: 100%;
+    }
+    .footer_banner>div>img{
+        width: 100%;
+    }
+    .footer_banner>div{
+        margin: 20px;
+    }
+    .corp_area{
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .corp_area{
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .corp_area>.corp_item>li{
+        padding-bottom: 5px;
+    }
+    .corp_area>.corp_item>li{
+        font-size: 14px;
+    }
+    .corp_area>.corp_adderess{
+        padding-bottom: 15px;
+    }
+    .corp_area>.corp_adderess>p{
+        font-size: 14px;
+    }
+    
+    
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/market_notice_write.css">
+    
+<body>
+    <header>
+        <section class="header_main">
+            <div class="title_wrap_2">
+                    <h1><img src="imges/logo.jpg"></h1>
+                <div class="h_title">
+                    <ul class="header_nav">
+                        <li><a href="">야시장소개</a></li>
+                        <li><a href="">먹거리 살거리</a></li>
+                        <li><a href="">서문거리예술문화</a></li>
+                        <li><a href="">참여마당</a></li>
+                        <li><a href="">입정신청</a></li>
+                    </ul>
+                    <div class="login">
+                        <a href="">로그인</a>
+                        <a href="">회원가입</a>
+                    </div>
+                    <div class="pc_none">
+                        <a href="">
+                            <img src="imges/icons8-menu-48.png">
+                        </a>
+                        <a href="">
+                            <img src="imges/icons8-buying-48.png">
+                        </a>
+                        <a href="">
+                            <img src="imges/icons8-search-48.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </header>
+        <section class="notice_wrap">
+            <h2>공지사항 수정하기</h2>
+            <% if(typeof errs !== "undefined") { %>
+                <% errs.forEach((err)=>{%>
+                    <h4 style="color: red;"><%=err.param%> : <%=err.msg%></h4>
+                <% }) %>
+            <% } %>
+            <form method="POST" action="/market_notice_update">
+            <input type="hidden" name="id" value="<%=row.id%>">
+              <table>
+                <tr>
+                    <td><laber>제목 : </laber></td>
+                    <td><input name="title" type="text" value="<%=row.title%>"></td>
+                </tr>
+                <tr>
+                    <td>내용 : </td>
+                    <td><textarea name="content"><%=row.content%></textarea></td>
+                </tr>
+                <tr>
+                    <td><lable>작성자 : </lable></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label>비밀번호 : </label></td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td><label name="updated">등록 날짜 : </label></td>
+                    <td>
+                        <input type="text" placeholder="20220419" value="<%=row.updated%>">
+                        <span>*8자리 숫자로 입력</span>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>수정</td>
+                    <td><input type="button" value="파일첨부" id="notice_file"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="수정"></td>
+                </tr>
+            </table>
+            </form>
+        </section>
+        <footer>
+            <section>
+              <article>
+                  <div class="footer_banner">
+                      <div>
+                        <img src="imges/footer_banner01 (1).jpg">
+                    </div>
+                    <div>
+                        <img src="imges/footer_banner02 (1).jpg">
+                    </div>
+                    <div>
+                        <img src="imges/footer_banner03 (1).jpg">
+                    </div>
+                    <div>
+                        <img src="imges/footer_banner04 (1).jpg">
+                    </div>
+                    <div>
+                        <img src="imges/footer_banner05 (1).jpg">
+                      </div>
+                  </div>
+                  <nav class="corp_area">
+                      <ul class="corp_item">
+                          <li><a href="#"> FAQ |</a></li>
+                          <li><a href="#">시장 소개 |</a></li>
+                          <li><a href="#">입점문의</a></li>
+                      </ul>
+                      <ul class="corp_item">
+                          <li>야시장 전화 |</li>
+                          <li>053-256-6341</li>
+                      </ul>
+                      <ul class="corp_adderess">
+                          <p>대구 남구 대명로 215 대구광역시상인회관4층, 재단법인 대구전통시장진흥재단ㆍ상권육성팀</p>
+                          <p>Seomun Night Market Ⓒ2016 Daegu traditional Market Support Agency. All Rights Reserved</p>
+                  </nav>
+              </article>
+          </section>
+          </footer>
+    </body>
+    </html>

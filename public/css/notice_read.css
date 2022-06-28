@@ -1,0 +1,166 @@
+
+/*********************main start************************/
+
+.w1400{
+    width: 1400px;
+    margin: auto;
+
+}
+.title_wrap{
+    width: 100%;
+    margin: auto;
+    background-color: #192649;
+    margin-top: 50px;
+}
+.title{
+    width: 100%;    
+    background-color: #192649;
+    margin: 30px auto;
+}
+.title>h1{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+.notice_wrap{
+    border-bottom: 1px solid #999;
+}
+.notice_list{
+    display: flex;
+    justify-content: center;
+
+}
+.notice_list>li{
+    width: 33.333%;
+
+}
+.notice_list>li>a{
+    display: inline-block;
+    border: 1px solid #192649;
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-bottom-color: #999;
+    background-color: #f6f6f6;
+    color: #727272;
+    text-align: center;
+    padding: 30px 0;
+}
+.notice_date{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto; 
+   
+}
+.notice_date>h2,span{
+    color: #999;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.w1400{
+    width: 1400px;
+    padding-bottom: 50px;
+}
+.file_list>li{
+    text-align: right;
+}
+.file_list>li>a{
+    color: #727272;
+    border-bottom: 1px solid #e5e5e5;
+}
+.txt_wrap p{
+    color: #727272;
+}
+ul .strong{
+    font-weight: bold;
+}
+.list{
+    padding: 30px 0;
+    box-sizing: border-box;
+    text-align: end;
+    border-bottom: 1px solid #999;
+}
+
+
+
+
+
+
+
+
+/**************~~~~~~~아래부턴 모바일 미디어 쿼리~~~~~~**************/
+
+
+@media only screen and (max-width: 1400px) {
+    
+    .sec1{
+       width: 100%;
+    }
+
+    .file_list{
+        width: 100%;
+    }
+    .footer_banner{
+        width: 100%;
+    }
+    .footer_banner>div>img{
+        width: 100%;
+    }
+    .footer_banner>div{
+        margin: 20px;
+    }
+    .corp_area{
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .corp_area>.corp_item>li{
+        padding-bottom: 5px;
+    }
+    .corp_area>.corp_item>li{
+        font-size: 14px;
+    }
+    .corp_area>.corp_adderess{
+        padding-bottom: 15px;
+    }
+    .corp_area>.corp_adderess>p{
+        font-size: 14px;
+    }
+
+
+
+
+
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .notice_list>li{
+        display: none;
+     }
+     .notice_date{
+        border-bottom: 1px solid #999;
+     }
+
+     .notice_date>h2,span{
+         font-size: 14px;
+     }
+     .file_list{
+         width: 100%;
+     }
+
+     .file_list>li{
+        text-align: right;
+        margin-top: 10px;
+    }
+     .txt_wrap{
+        padding: 25px 15px;
+        box-sizing: border-box;
+     }
+     .txt_wrap>p{
+         font-size: 14px;
+     }
+
+    
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/market_notice.css">
+</head>
+<body>
+</head>
+<body>
+    <header>
+        <section class="header_main">
+            <div class="title_wrap_2">
+                <h1><img src="imges/logo.jpg"></h1>
+                <div class="h_title">
+                    <ul class="header_nav">
+                        <li><a href="">야시장소개</a></li>
+                        <li><a href="">먹거리 살거리</a></li>
+                        <li><a href="">서문거리예술문화</a></li>
+                        <li><a href="">참여마당</a></li>
+                        <li><a href="">입정신청</a></li>
+                    </ul>
+                    <div class="login">
+                        <a href="">로그인</a>
+                        <a href="">회원가입</a>
+                    </div>
+                    <div class="pc_none">
+                        <a href="">
+                            <img src="imges/icons8-menu-48.png">
+                        </a>
+                        <a href="">
+                            <img src="imges/icons8-buying-48.png">
+                        </a>
+                        <a href="">
+                            <img src="imges/icons8-search-48.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <main> 
+        <section>
+            <div class="title_wrap">
+                <div class="title">
+                    <h1 class="notice">공지사항</h1>
+                </div>
+            </div>
+        </section>
+        <section class="main_notice">
+                <aside class="menu_aside">
+                        <ul class="menu">
+                            <li class="menu_notice"><a href="#">공지사항</a></li> 
+                            <li><a href="#">행사안내</a></li>
+                            <li><a href="#">현장스케치</a></li>
+                            <li><a href="#">문의 및 제안</a></li>
+                            <li><a href="#">입점신청</a></li>
+                            <li><a href="#">언론보도</a></li>
+                        </ul>
+                </aside>
+            <article class="notice2">
+                <div class="notice_wrap">
+                    <ul class="notice_select">
+                        <li class="select"><a href="">공지사항</a></li>
+                        <li><a href="">행사안내</a></li>
+                        <li><a href="">현장스케치</a></li>
+                        <li><a href="">입점신청</a></li>
+                        <li><a href="">문의 및 제안</a></li>
+                        <li><a href="">언론보도</a></li>
+                    </ul>
+                    <div class="input_type">
+                            <div class="input_wrap">
+                                <form id="search">
+                                    <input type="text" placeholder="검색어를 입력하세요">
+                                    <button>검색</button>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+                <table class="t_title" method="POST" action="/store">
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>등록일</th>
+                        </tr>
+                        <% rows.forEach((row,index) => { %>
+                        <tr>
+                            <td><%= row.id%></td>
+                            <td onclick="javascript:location.href='/notice_read?id=<%=row.id%>'"><%= row.title%></td>
+                            <td><%= row.updated%></td>
+                            <td>
+                                <input type="button" onclick="javascript:location.href='/market_notice_update?id=<%=row.id%>'" value="수정">
+                                <input type="button" onclick="javascript:location.href='/deletememo?id=<%=row.id%>'" value="삭제">
+                            </td>
+                        </tr>
+                        <% }) %>
+                    
+                    </table>
+                    <button type="button" onclick="javascript:location.href='/market_notice_write'" value="관리자용작성">관리자용 작성페이지</button>
+                      <div class="innner_box">
+                        <div>
+                          <span class="inner_box_color"><a href=""><</a></span>
+                          <span class="inner_box_number"><a href="">1</a></span>
+                          <span class="inner_box_number"><a href="">2</a></span>
+                          <span class="inner_box_number"><a href="">3</a></span>
+                          <span class="inner_box_color"><a href="">></a></span>
+                      </div>
+                    </div>
+            </article>
+        </section>
+    </main> 
+    <footer>
+      <section>
+        <article>
+            <div class="footer_banner">
+                <div>
+                    <img src="imges/footer_banner01 (1).jpg">
+                </div>
+                <div>
+                    <img src="imges/footer_banner02 (1).jpg">
+                </div>
+                <div>
+                    <img src="imges/footer_banner03 (1).jpg">
+                </div>
+                <div>
+                    <img src="imges/footer_banner04 (1).jpg">
+                </div>
+                <div>
+                    <img src="imges/footer_banner05 (1).jpg">
+                </div>
+            </div>
+            <nav class="corp_area">
+                <ul class="corp_item">
+                    <li><a href="#"> FAQ |</a></li>
+                    <li><a href="#">시장 소개 |</a></li>
+                    <li><a href="#">입점문의</a></li>
+                </ul>
+                <ul class="corp_item">
+                    <li>야시장 전화 |</li>
+                    <li>053-256-6341</li>
+                </ul>
+                <ul class="corp_adderess">
+                    <p>대구 남구 대명로 215 대구광역시상인회관4층, 재단법인 대구전통시장진흥재단ㆍ상권육성팀</p>
+                    <p>Seomun Night Market Ⓒ2016 Daegu traditional Market Support Agency. All Rights Reserved</p>
+            </nav>
+        </article>
+    </section>
+    </footer>
+</body>
+</html>
