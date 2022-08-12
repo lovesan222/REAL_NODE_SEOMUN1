@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/join_detail.css">
+    <link rel="stylesheet" href="./css/join.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/market_notice_write.css">
+    <link rel="stylesheet" href="./css/market_notice.css">
+    <link rel="stylesheet" href="./css/market.css">
+    <link rel="stylesheet" href="./css/notice_read.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+</head>
+        <section class="header_main">
+            <div class="title_wrap_2">
+                <div class="header_wrap_all">
+                    <h1><a href="/"><img src="img/images/main_logo.png"></a></h1>
+                    <div class="h_title">
+                        <ul class="header_nav">
+                            <li><a href="intro">야시장소개</a></li>
+                            <li><a href="">먹거리 살거리</a></li>
+                            <li><a href="">서문거리예술문화</a></li>
+                            <li><a href="marketNotice">참여마당</a></li>
+                            <li><a href="">입정신청</a></li>
+                        </ul>
+                        <div class="login">
+                            <a href="login" id="login" onclick="javascript:kakaoLogin();">로그인</a>
+                            <a id="dis"><span id="user"></span>님</a> 
+                            <a id="logout" onclick="javascript:kakaoLogout();">로그아웃</a>
+                            <a href="join">회원가입</a>
+                        </div>
+                        <div class="pc_none">
+                            <a href="">
+                                <img src="img/images/icons8-menu-48.png">
+                            </a>
+                            <a href="">
+                                <img src="img/images/icons8-buying-48.png">
+                            </a>
+                            <a href="">
+                                <img src="img/images/icons8-search-48.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+<body>
+    <main>
+        <%- body %>
+    </main>
+</body>
+<footer>
+    <section>
+        <article>
+            <div class="footer_banner">
+                <div>
+                    <img src="img/images/footer_banner01 (1).jpg">
+                </div>
+                <div>
+                    <img src="img/images/footer_banner02 (1).jpg">
+                </div>
+                <div>
+                    <img src="img/images/footer_banner03 (1).jpg">
+                </div>
+                <div>
+                    <img src="img/images/footer_banner04 (1).jpg">
+                </div>
+                <div>
+                    <img src="img/images/footer_banner05 (1).jpg">
+                </div>
+            </div>
+            <div class="foot_all_wrap">
+                <nav class="corp_area">
+                    <ul class="corp_adderess">
+                        <p>대구 남구 대명로 215 대구광역시상인회관4층, 재단법인 대구전통시장진흥재단ㆍ상권육성팀</p>
+                        <p>Seomun Night Market Ⓒ2016 Daegu traditional Market Support Agency. All Rights Reserved</p>
+                    </ul>    
+                </nav>
+            </div>
+        </article>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
+    <script src="./js/swiper.js"></script>
+    <script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=18162ec4d272d2e9747db9961e4e414c"></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/login.js"></script>
+</footer>
+</html>
