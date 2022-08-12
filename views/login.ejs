@@ -11,38 +11,46 @@
 
 </head>
 <body>
-    <section class="login-form">
-        <article>
-            <div class="w480">
-                <h1>LOGIN</h1>
-                <div class="seller">
-                    <ul class="seller_wrap">
-                        <li><a href="">개인</a></li>
-                        <li><a href="">식품셀러</a></li>
-                        <li><a href="">프리마켓셀러</a></li>
-                    </ul>
-                    <form>
-                        <div class="int-area">
-                            <input type="text" name="id" id="id" autocomplete="off" required>
-                            <label for="id">아이디</label>
-                        </div>
-                        <div class="int-area">
-                            <input type="password" name="pw" id="pw" autocomplete="off" required>
-                            <label for="pw">비밀번호</label>
-                        </div>
-                        <div class="btn-area">
-                            <button id="btn" type="submit">LOGIN</button>
-                        </div>
-                    </form>
-                    <div class="caption">
-                        <a href="">아이디 찾기</a>
-                        <a href="">비밀번호 찾기</a>
-                        <a href="">회원가입</a>
-                    </div>
+<main class="login_b">
+    <section class="login_sec1440">
+        <article class="l_inner">
+            <h1>로그인</h1>
+            <ul class="login_wrap">
+                <li class="member" onclick="">개인</li>
+                <li class="nonmem" onclick="">식품셀러</li>
+                <li calss="seller" onclick="">프리마켓셀러</li>
+            </ul>
+            <div class="tab_wrapper">
+                <div class="login_icon">
+                    <span class="id_wrap">
+                        <p>ID</p>
+                        <input type="text" >
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </span>
+                </div>
+                <div class="pw_icon">
+                    <span class="id_wrap">
+                        <p>PASSWORD</p>
+                        <input type="password">
+                        <span class="material-symbols-outlined">lock</span>
+                    </span>
+                </div>
+                <div class="l_enter">
+                    <a class="a_login" href="">
+                        <p>LOGIN</p>
+                    </a>
+                </div>
+                <div class="kakao">
+                    <img src="img/images/kakao_login_large_wide.png" onclick="javascript:kakaoLogin();">
+                </div>
+                <div class="l_txt">
+                    <p><a href="join">JOIN US </a></p>
+                    <span> | </span>
+                    <p><a href="">FIND ID and PASSWORD</a></p>
                 </div>
             </div>
         </article>
-    </section>  
+    </section>
 </main>
 </body>
 </html>
