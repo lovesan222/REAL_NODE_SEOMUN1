@@ -9,15 +9,15 @@
 .title_wrap{
     width: 100%;
     margin: auto;
-    background-color: #192649;
+    /* background-color: #192649; */
     margin-top: 50px;
 }
-.title{
+.notice_title{
     width: 100%;    
     background-color: #192649;
     margin: 30px auto;
 }
-.title>h1{
+.notice_title>h1{
     font-size: 24px;
     font-weight: bold;
     color: #fff;
@@ -53,12 +53,13 @@
     margin: auto; 
    
 }
-.notice_date>h2,span{
+.notice_date>h2,.notice_date>span{
     color: #999;
     margin: 20px;
     font-weight: bold;
     font-size: 16px;
 }
+
 .w1400{
     width: 1400px;
     padding-bottom: 50px;

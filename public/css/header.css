@@ -1,13 +1,36 @@
-html{
-    background-color: #fff;
+
+body{
+    overflow-x: hidden; 
 }
-.title_wrap_2{
+
+.header_main{
     width: 100%;
-    display: flex;
-    margin: auto;
-    background-color: #192649;
-    margin-bottom: 50px;
 }
+
+.title_wrap_2{
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: #192649;
+}
+
+.header_wrap_all{
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: #192649;
+
+}
+.header_wrap_all>h1{
+    width: 15%;
+}
+.header_wrap_all>h1>a>img{
+    width: 100%;
+    vertical-align: middle;
+}
+
 .header_nav{
     display: flex;
     justify-content: space-between;
@@ -31,13 +54,13 @@ html{
     justify-content: space-between;
     color: white;
     margin: 0 30px;
-    font-size: 20px;
 }
 .h_title>.login{
     display: flex;
     margin-left: 150px;
 }
-.login>a{  
+.login>a{
+    cursor: pointer;
     display: inline-block;  
     margin: 0 0 0 20px;
     color: white;
@@ -45,11 +68,13 @@ html{
 .pc_none{
     display: none;
 }
-
+#dis{
+    display: none;
+}
 /************* *footer Section*************************/
 
 .footer_banner{
-    width: 100%;
+    width: 1400px;
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -61,19 +86,30 @@ html{
 .footer_banner>div{
     margin-top: 50px;
 }
-.corp_area{
+.foot_all_wrap{
     width: 100%;
-    height: 171px;
+}
+.corp_area{
+    padding: 30px;
+    box-sizing: border-box;
     background-color: #192649;
     font-weight: bold;
     margin: 50px auto;
     font-size: 16px;
 }
+
 .corp_item{
-    padding-top: 20px;
     display: flex;
-    justify-content:start;
     color: white;
+    align-items: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.corp_item>span{ /* | 이거 사용할때 이렇게 씀*/
+    display: block; /*블락을 주고 패딩 값을 줘야함*/
+    font-size: 16px;
+    padding: 0 5px;
+    box-sizing: border-box;
 }
 .corp_item>li>a{
     text-decoration: none;
@@ -84,6 +120,12 @@ html{
 
 .corp_adderess{
     color: white;
+    text-align: center;
+}
+
+.corp_adderess>p{
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 
