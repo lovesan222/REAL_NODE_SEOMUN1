@@ -26,11 +26,12 @@
     background-color: #fff;
     text-align: center;
     border-right: 1px solid #e3e7ee;
+    cursor: pointer;
 }
 .gray>.icon_fi{
     border-right: none;
-    background-color: #9199ac;
-    color: #e3e7ee;
+    background-color: #ffbf0b;
+    color: #fff;
 }
 .seller_wrap2{
     padding: 20px;
@@ -39,16 +40,18 @@
 }
 .sell{
     display: flex;
+    align-items: center;
 }
 .sell>span{
     display: inline-block;
-    background: url(../Img/images/sp_icon_join.png) no-repeat 0 0;
+    background: url(../Img/images/group_FILL0_wght400_GRAD0_opsz48.png) no-repeat 0 0;
 	width: 60px;
 	height: 60px;
 }
 .sell>p{
     padding: 20px;
     box-sizing: border-box;
+    color: #494949;
 }
 .wsec1400{
     width: 960px;
@@ -70,7 +73,7 @@
     padding: 10px;
     box-sizing: border-box;
     height: 200px;
-    background-color: lightgray;
+    background-color: #ffbf0b;
     position: relative;
 }
 .img_wrap>.icons>a>span{
@@ -82,26 +85,29 @@
     position: absolute;
     top: 65%; left: 50%;
     transform: translate(-50%);
-    color: white;
+    color: #fff;
+
+}
+
+.img_wrap>.icons>a>span{
+    display: inline-block;
+    width: 60px;
+	height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    display: inline-block;
 }
 .first{
-    display: inline-block;
-    background: url('../Img/images/sp_icon_join.png') no-repeat -350px -80px;
-	width: 60px;
-	height: 60px;
+    background: url('../Img/images/person_filled_FILL0_wght400_GRAD0_opsz48.png') no-repeat -350px -80px;
 }
 .second{
-    display: inline-block;
-    background: url('../Img/images/sp_icon_join.png') no-repeat -560px 0;
-	width: 60px;
-	height: 60px;
+
+    background: url('../Img/images/no_meals_FILL0_wght400_GRAD0_opsz48.png') no-repeat -560px 0;
+
 }
-.img_wrap>.icons>a>.third{
-    display: inline-block;
-	background: url('../Img/images/sp_icon_join.png') no-repeat 0 -80px;
-	width: 60px;
-	height: 60px;
-    background-color: black;
+.third{
+	background: url('../Img/images/storefront_FILL0_wght400_GRAD0_opsz48.png') no-repeat 0 -80px;
 }
 
 .text{
@@ -115,8 +121,8 @@
 }
 .text_wrap>li{
     font: 16px;
-    background-color: lightgray;
-    color: black;
+    background-color: #ffbf0b;
+    color: #fff;
     padding: 5px;
     box-sizing: border-box;
 }
@@ -126,9 +132,12 @@
 }
 .next>div>a{
     display: inline-block;
-    background-color: #00c73c;
+    background-color: #ffbf0b;
     padding: 20px 50px;
     box-sizing: border-box;
     color: white;
     font-weight: bold;
+}
+.next>div>a:hover{
+    background-color: #494949;
 }

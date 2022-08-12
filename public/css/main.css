@@ -1,5 +1,8 @@
 
 
+body{
+    overflow-x: hidden; 
+}
 
 
 /***************main start*********************/
@@ -137,25 +140,33 @@
     .gallery_wrap>div{
         width: calc(25% - 10px);
     }
-    .gallery_wrap>div>a{
-        display: inline-block;
-        padding-top: 100%;
-    }
+
     .gallery_wrap>div{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        padding-top: 50px;
-        margin-left: 10px;
+        /* padding-top: 50px; */
         margin-bottom: 50px;
-        
     }
     .gallery_wrap>div:first-child{
         background-position: top;
         margin-left: 0px;
     }
+    .swiper-backface-hidden{
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide{ 
+        padding-top: 25%; 
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      display: none;
+    }
     .gallery_img_1{
         background-image: url(../img/images/grand_open.png);
+
     }
     .gallery_img_2{
         background-image: url(../img/images/people.jpg);
@@ -169,6 +180,7 @@
     .gallery_img_5{
         background-image: url(../img/images/food.jpg);
     }
+    
 .moon_wrap{
     width: 100%;
     padding-top: 50px;
@@ -229,6 +241,7 @@
 }
 .number_inf{
     text-align: left;
+    margin-bottom: 40px;
 }
 .number_inf>h3{
     font-size: 28px;
@@ -372,47 +385,6 @@
 .news_wrap>ul>li>a{
     display: block;
 }
-/************* *footer Section*************************/
-
-
-.footer_banner{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-}
-.footer_banner>div>img{
-    width: 100%;
-}
-.footer_banner>div{
-    margin-top: 50px;
-}
-.corp_area{
-    width: 100%;
-    height: 171px;
-    background-color: #192649;
-    font-weight: bold;
-    margin: 50px auto;
-    font-size: 16px;
-}
-.corp_item{
-    padding-top: 20px;
-    display: flex;
-    justify-content:start;
-    color: white;
-
-}
-.corp_item>li>a{
-    text-decoration: none;
-    list-style: none;
-    color: white;
-    text-align: center;
-}
-
-.corp_adderess{
-    color: white;
-
-}
 
 
 /**************~~~~~~~아래부턴 미디어 쿼리~~~~~~**************/
@@ -543,23 +515,6 @@
 .footer_banner>div{
     margin: 20px;
 }
-.corp_area{
-    flex-wrap: nowrap;
-    width: 100%;
-}
-.corp_area>.corp_item>li{
-    padding-bottom: 5px;
-}
-.corp_area>.corp_item>li{
-    font-size: 14px;
-}
-.corp_area>.corp_adderess{
-    padding-bottom: 14px;
-}
-.corp_area>.corp_adderess>p{
-    font-size: 14px;
-}
-
 
 
 
@@ -628,13 +583,14 @@
         background-color: #FFBF0B;
         margin: auto;
     }
+
     .title>h1{
         font-size: 20px;
     }  
     .gallery_wrap{
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
     }
     .gallery_wrap>div{
         width: calc(50% - 10px);
@@ -644,9 +600,7 @@
     .gallery_wrap>div.gallery_img_5{
        display: none;
     }
-    .way_wrap{
-        flex-direction: column;
-    }
+
     .moon_txt2>h4{
         text-align: center;
         font-size: 24px;
@@ -714,25 +668,6 @@
     .footer_banner>div{
         margin: 20px;
     }
-    .corp_area{
-        flex-wrap: nowrap;
-        width: 100%;
-    }
-    .corp_area>.corp_item>li{
-        padding-bottom: 5px;
-    }
-    .corp_area>.corp_item>li{
-        font-size: 14px;
-    }
-    .corp_area>.corp_adderess{
-        padding-bottom: 15px;
-    }
-    .corp_area>.corp_adderess>p{
-        font-size: 14px;
-    }
-    
-    
-    
     
     
     
